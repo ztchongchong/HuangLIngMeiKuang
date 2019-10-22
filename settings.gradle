@@ -1,0 +1,2 @@
+include ':app', ':UMLibrary', ':ncalendars'
+project(':ncalendars').projectDir = new File('ncalendar')
