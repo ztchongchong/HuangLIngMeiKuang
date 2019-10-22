@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="12dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_marginTop="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_task_name"
+                android:text="1.1.1 专业技能及作业规范"
+                android:textColor="@color/black"
+                android:paddingLeft="15dp"
+                android:lineSpacingExtra="2dp"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_task_type"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_task_type"
+                android:text="去检查"
+                android:padding="3dp"
+                android:background="@drawable/shape_biankuang"
+                android:textColor="#2196f3"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:text="露天煤矿-岗位规范-专业技能及作业规范"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_yijian"
+                android:text="意见: "
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/layout"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:lineSpacingExtra="2dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/zongfen"
+                    android:text="共6分"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="得"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/defen"
+                    android:text="？"
+                    android:background="@drawable/shape_yellow_circular"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp" />
+
+                <TextView
+                    android:text="分"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

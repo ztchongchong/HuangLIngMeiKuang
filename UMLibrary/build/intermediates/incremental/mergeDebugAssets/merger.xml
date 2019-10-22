@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\job\android code\huangling_meikuang\UMLibrary\assets"/><source path="E:\job\android code\huangling_meikuang\UMLibrary\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\job\android code\huangling_meikuang\UMLibrary\build-types\debug\assets"/></dataSet></merger>

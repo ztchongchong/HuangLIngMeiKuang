@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="12dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingRight="10dp"
+        android:background="@drawable/shape_bg_gray"
+        android:gravity="center"
+        android:text="七季度专项计划"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp" />-->
+</LinearLayout>

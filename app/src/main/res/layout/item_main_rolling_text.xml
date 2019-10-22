@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_topname"
+        android:text="协商函的步骤正在办理中,今年的任务必须完成,请稍后请稍后请稍后请稍后请稍后请稍后"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_leftname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协商函"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:text="1"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_blue_circular"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

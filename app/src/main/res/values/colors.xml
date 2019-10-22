@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#ffffffff</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="pop_text_color">#000</color>
+    <color name="bule">#2196F3</color>
+    <color name="notice_red_color">#FFE20000</color>
+    <color name="tab_text_color_selected">#2196F3</color>
+
+    <color name="gray3">#999999</color>
+    <color name="gray4">#FFF9FAFC</color>
+
+    <color name="color333">#333333</color>
+    <color name="touming">#b0000000</color>
+    <color name="aurora_cursor_color_default">#8db4eb</color>
+    <color name="spark_gray">#b0b0b0</color>
+    <color name="yellow">#FFCA28</color>
+    <color name="color666">#666666</color>
+    <color name="text_all_task">#bfbfbf</color>
+    <color name="blue0092">#0092df</color>
+    <color name="color9797">#979797</color>
+    <color name="color0092dfblue">#0092df</color>
+    <color name="color025bc3blue">#4DD0E1</color>
+    <color name="color61ace0">#61ace0</color>
+    <color name="colorc0c0c0gray">#c0c0c0</color>
+    <color name="spark_light_grey_pop_bg">#99999999</color>
+    <color name="color3892d9blue">#3892d9</color>
+    <color name="colore3e3e3gray">#e3e3e3</color>
+    <color name="colorf5f5f5gray">#f5f5f5</color>
+    <color name="color3891d7blue">#3891d7</color>
+    <color name="app_bg">#EFEFF4</color>
+
+    <color name="state_wjc">#1DC888</color>
+    <color name="state_zc">#FD1E4D</color>
+    <color name="state_yc">#2196F3</color>
+
+    <color name="progress_gray">#ffe4e4e4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="progress_start">#f1e134</color>
+    <color name="progress_end">#f14a34</color>
+
+    <color name="xun_dianji">#2196F3</color>
+    <color name="xun_quxiao">#fff</color>
+
+</resources>

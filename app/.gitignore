@@ -1,0 +1,11 @@
+/build
+File: local.properties
+Directory: .gradle/
+Directory: .idea/
+Directory: build/
+Directory: app/build/
+Directory: UMLibrary/build/
+Mask: *.iml
+Mask: *.apk
+Mask: *.jks
+Directory: app/release/

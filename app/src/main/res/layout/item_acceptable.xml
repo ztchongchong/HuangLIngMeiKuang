@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/score"
+            android:singleLine="true"
+            android:text="01.01.01 专业技能及作业规范"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/text"
+            android:background="@drawable/shape_circle_point_yellow"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="分"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/spark_light_grey_pop_bg" />
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/pull"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/zeren"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:text="责任：张三"
+                android:textColor="@color/color666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/peihe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="配合：李四，王五"
+                android:textColor="@color/color666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/teyao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="特邀：何七"
+                android:textColor="@color/color666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pull"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/jiantou_bottom" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/data_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/spark_light_grey_pop_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/typestr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="5dp"
+                android:text="露天煤矿-岗位规范-专业技能及作业规范"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:paddingRight="18dp"
+                android:paddingTop="5dp"
+                android:text="编号：01.01.01"
+                android:textColor="@color/tab_text_color_selected"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="3dp"
+                android:text="要求:"
+                android:textColor="@color/text_all_task"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yaoqiu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="3dp"
+                android:text="评分:"
+                android:textColor="@color/text_all_task"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/pingfen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="3dp"
+                android:text="检查方式及内容:"
+                android:textColor="@color/text_all_task"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/jiancha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="3dp"
+                android:text="所需资料:"
+                android:textColor="@color/text_all_task"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ziliao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="3dp"
+                android:text="扣分细则:"
+                android:textColor="@color/text_all_task"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/koufen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="建立安全风险分级管控体系,建立安全风险分级管控体系,建立安全风险分级管控体系"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/spark_light_grey_pop_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/liyou_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/sw_state"
+            android:text=""
+            android:textSize="12sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sw_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:checked="false"
+            android:textSize="11sp"
+            app:kswThumbColor="@color/white" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_block_divider" />
+</LinearLayout>

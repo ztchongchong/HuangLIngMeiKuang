@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lingjun.colliery_android">
+
+
+    <!-- Required -->
+    <permission
+        android:name="com.lingjun.colliery_android.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+
+    <!-- Required -->
+    <uses-permission android:name="com.lingjun.colliery_android.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.CALL" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+    <!-- protection level is dangerous, need request runtime permission -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    //添加权限 角标
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <application
+        android:name=".application.CollieryApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".base.BaseClipImageActivity" />
+        <activity android:name=".module.main.FileTransferActivity" />
+        <activity android:name=".module.main.SelectPersonnelActivity" />
+        <activity android:name=".module.main.SelectFileActivity" />
+        <activity
+            android:name=".module.main.MainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity android:name=".module.dealwith.standardized.audit.AuditActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.AllTaskActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.LeadershipActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.ResponsibleActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.SpecialPersonnelActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.AZeroTaskActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.FullMarksTaskActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.CheckTaskActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.CooperateWithStaffActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.ThroughOpinionActivity" />
+        <activity android:name=".module.dealwith.standardized.audit.RejectedOpinionActivity" />
+        <activity android:name=".module.dealwith.standardized.accepted.AcceptedActivity" />
+        <activity android:name=".module.dealwith.standardized.check.CheckActivity" />
+        <activity android:name=".module.dealwith.standardized.review.ReviewActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.HiddenDangerDraftActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.PhotoActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.HiddenDangersHistoryActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.SurveyRecordActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.HiddenDangersHandleActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.SupervisionOfListingActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.ToBeAuditedActivity" />
+        <activity android:name=".module.dealwith.standardized.review.ScoreInfoDetailsActivity" />
+        <activity android:name=".module.dealwith.standardized.review.HistoryActivity" />
+        <activity android:name=".module.dealwith.standardized.check.CheckDetailsActivity" />
+        <activity android:name=".module.main.rectifyingviolations.RectifyingViolationsActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.HiddenDangersDetailsActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.DraftActivity" />
+        <activity android:name=".module.main.rectifyingviolations.UnsafeBehaviorActivity" />
+        <activity android:name=".module.main.SelectReviewerActivity" />
+        <activity android:name=".module.main.rectifyingviolations.RectifyingViolationsManagementActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.general_hidden_danger.HiddenDangerRegionActivity" />
+        <activity
+            android:name=".module.dealwith.hiddendanger.activity.ProcessingSchemeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".module.dealwith.activity.SiteManagementActivity" />
+        <activity android:name=".module.dealwith.activity.RectifyTimeLimitActivity" />
+        <activity android:name=".module.dealwith.activity.MajorHiddenDangerActivity" />
+        <activity android:name=".module.main.rectifyingviolations.PreviewViolationInformationActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.FieldManagementActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.RectifyTimeLimitActivity" />
+        <activity
+            android:name=".module.dealwith.hiddendanger.general_hidden_danger.HiddenDangerNtryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".module.dealwith.hiddendanger.general_hidden_danger.HiddenDangerContentActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.MajorHiddenDangersActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.general_hidden_danger.HiddenDangerPositionActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.general_hidden_danger.HiddenDangerPlanActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.ResponsibilityActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.HiddenDangeGradeActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.UpgradeAuditorActivity" />
+        <activity android:name=".module.main.rectifyingviolations.ToBeStoredActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.HiddenTroubleDetailsActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.TimeLimitToBeStoredActivity" />
+        <activity android:name=".module.dealwith.activity.RectificationActivity" />
+        <activity android:name=".module.dealwith.activity.RejectCommitActivity" />
+        <activity android:name=".module.dealwith.activity.AttachmentsListActivity"></activity>
+        <activity android:name=".module.main.rectifyingviolations.NoticelistActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.upervise.AcceptanceActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.upervise.PendingStorageActivity" />
+        <activity android:name=".module.dealwith.activity.DelayApplyActivity" />
+        <activity android:name=".module.dealwith.activity.ReGovernanceActivity"></activity>
+        <activity android:name=".module.message.MessageActivity" />
+        <activity android:name=".module.message.PenaltySheetActivity" />
+        <activity android:name=".module.my.ModifyPhoneActivity" />
+        <activity android:name=".module.my.ChangePasswordActivity" />
+        <activity android:name=".module.dealwith.activity.PendingreviewActivity" />
+        <activity android:name=".module.dealwith.activity.AllTaskActivity" />
+        <activity android:name=".module.dealwith.activity.FullMarkTaskActivity" />
+        <activity android:name=".module.dealwith.activity.ToReviewActivity" />
+        <activity
+            android:name=".module.dealwith.activity.DivideWorkActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".module.dealwith.activity.ToReviewInfoActivity" />
+        <activity android:name=".module.dealwith.activity.ImplementedActivity" />
+        <activity
+            android:name=".module.dealwith.activity.CheckHistoryActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".module.dealwith.activity.InviteLeadActivity" />
+        <activity android:name=".module.document.activity.DocumentSearchActivity" />
+
+        <activity android:name=".module.document.activity.DocumentSearchListActivity" />
+
+        <activity android:name=".module.document.activity.BorrowListActivity" />
+
+        <activity android:name=".module.document.activity.BorrowApplyActivity" />
+
+        <activity android:name=".module.document.activity.BorrowApplyNoticeActivity" />
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置 android:process 参数将 PushService 放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.lingjun.colliery_android.DataProvider"
+            android:exported="true" />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的 JPush 服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，或把 enabled 设置成 false ；拉起服务被关闭，App 不会通过拉起服务拉起其他的 App，也不会被其他 App 拉起。 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.lingjun.colliery_android" />
+            </intent-filter>
+        </service>
+
+        <!-- since 3.1.0 Required SDK 核心功能-->
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="您应用的包名.DownloadProvider"
+            android:exported="true" />
+
+        <!-- Required SDK 核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.lingjun.colliery_android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK 核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.lingjun.colliery_android" />
+            </intent-filter>
+        </activity>
+        <!-- SDK 核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.lingjun.colliery_android" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.dealwith.hiddendanger.activity.RectifyHistoryActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.CustomInputActivity" />
+        <activity android:name=".module.main.rectifyingviolations.MoreNoticelistActivity" />
+        <activity android:name=".module.my.PersonalSettingsActivity" />
+        <activity android:name=".module.main.rectifyingviolations.JWcustomActivity" />
+        <activity android:name=".module.document.activity.TaskTrackingActivity" />
+        <activity android:name=".module.document.activity.TaskTrackingLIstActivity" />
+        <activity android:name=".module.dealwith.activity.DataEditingActivity" />
+        <activity android:name=".module.dealwith.activity.KeyWordActivity" />
+        <activity android:name=".module.document.activity.LoanApplicationActivity" />
+        <activity android:name=".module.main.rectifyingviolations.TransportPersonnelActivity" />
+        <activity android:name=".module.my.PersonalFoldersActivity" />
+        <activity android:name=".module.dealwith.activity.SolutionActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.SelectReviewerActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.CooperationActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.AcceptanceUnitActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.PersonLiableActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.AcceptorActivity" />
+        <activity android:name=".module.main.rectifyingviolations.DisobeyLeaderActivity" />
+        <activity android:name=".module.main.rectifyingviolations.RiskTrackingActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.ItemRiskTrackingActivity" />
+        <activity android:name=".module.main.rectifyingviolations.RiskTrackingsActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.JiuWeiTypeActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.AmendmentPenaltyActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.AmendmentPenaltyItemActivity" />
+        <activity android:name=".module.message.RiskAbnormalityActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.SuperiorLeaderActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.ShiftsNameActivity" />
+        <activity android:name=".module.main.rectifyingviolations.InspectorActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.QuestionsListActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.RectificationListActivity" />
+        <activity android:name=".module.dealwith.hiddendanger.activity.DetailedlistActivity" />
+        <activity android:name=".module.dealwith.activity.StandardizationDetailsActivity" />
+        <activity android:name=".module.dealwith.activity.ScoreDetailsActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.AssessmentActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.TeamActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.ExamineeActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.TenDaysActivity" />
+        <activity android:name=".module.main.rectifyingviolations.fragment.NegativeActivity" />
+        <activity android:name=".module.siyuanliangzhang.SyliangzhangActivity" />
+        <activity android:name=".module.siyuanliangzhang.SylzClockdialActivity" />
+        <activity android:name=".module.siyuanliangzhang.SylzAssessorActivity" />
+        <activity android:name=".module.siyuanliangzhang.SylzCheckListActivity" />
+
+
+        <!-- Required SDK 核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK 核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required since 3.0.7 -->
+        <!-- 新的 tag/alias 接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 该广播需要继承 JPush 提供的 JPushMessageReceiver 类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name=".myjpush.MyJPushMessageReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.lingjun.colliery_android" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined. 用户自定义的广播接收器-->
+        <receiver
+            android:name=".myjpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <!--Required 用户注册 SDK 的 intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收 SDK 消息的 intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收 SDK 通知栏信息的 intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的 intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.lingjun.colliery_android" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计 APK 分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的 APK 可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c95d54c7dccca5b900913f49" />
+
+    </application>
+
+</manifest>

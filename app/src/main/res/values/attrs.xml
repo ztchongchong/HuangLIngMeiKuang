@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义属性 -->
+    <declare-styleable name="ClipViewLayout">
+        <attr name="clipType" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="mHorizontalPadding" format="dimension" />
+        <attr name="clipBorderWidth" format="dimension" />
+    </declare-styleable>
+
+    <!--圆角图片-->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="leftTop" format="dimension" />
+        <attr name="rightTop" format="dimension" />
+        <attr name="leftBottom" format="dimension" />
+        <attr name="rightBottom" format="dimension" />
+        <attr name="allAngle" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DiscView">
+        <!--圆圈线的宽度-->
+        <attr name="dvStrokenWidth" format="dimension" />
+        <!--圆圈颜色-->
+        <attr name="dvStrokenColor" format="color" />
+        <!--外装饰圆是否显示-->
+        <attr name="dvOuterCircleShow" format="boolean" />
+        <!--外装饰圆距离圆环边距-->
+        <attr name="dvOuterCirclePad" format="dimension" />
+
+        <!--内部装饰圆是否显示-->
+        <attr name="dvInnerCircleShow" format="boolean" />
+        <!--内部装饰圆距离圆环边距-->
+        <attr name="dvInnerCirclePad" format="dimension" />
+
+        <!--底部圆形是否显示-->
+        <attr name="dvBottomCircleIsShow" format="boolean" />
+
+        <!--圆形指示图片-->
+        <attr name="dvIndicatorDraw" format="reference" />
+
+        <!--圆盘开始旋转角度值-->
+        <attr name="dvStartRotateAngle" format="integer" />
+        <!--圆盘可旋转角度范围-->
+        <attr name="dvAngleRotateSpan" format="integer" />
+
+        <!--圆盘模式-->
+        <attr name="dvCircleMode">
+            <enum name="normal" value="1" />
+            <enum name="round" value="2" />
+            <enum name="dot" value="3" />
+        </attr>
+    </declare-styleable>
+    <attr name="ProgresUnReachColor" format="color"></attr>
+    <attr name="HorizontalProgresUnReachHeight" format="dimension"></attr>
+    <attr name="HorizontalProgresReachColor" format="color"></attr>
+    <attr name="HorizontalProgresUnReachColor" format="color"></attr>
+
+    <attr name="HorizontalProgresReachHeight" format="dimension"></attr>
+    <attr name="HorizontalProgresTextColor" format="color"></attr>
+    <attr name="HorizontalProgresTextSize" format="dimension"></attr>
+    <attr name="HorizontalProgresTextOffset" format="dimension"></attr>
+
+
+    <declare-styleable name="CustomHorizontalProgresStyle">
+        <attr name="HorizontalProgresUnReachColor"></attr>
+        <attr name="HorizontalProgresUnReachHeight"></attr>
+        <attr name="HorizontalProgresReachColor"></attr>
+        <attr name="HorizontalProgresReachHeight"></attr>
+        <attr name="HorizontalProgresTextColor"></attr>
+        <attr name="HorizontalProgresTextSize"></attr>
+        <attr name="HorizontalProgresTextOffset"></attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomCircleProgresStyle">
+        <attr name="CustomCircleRadio" format="dimension"></attr>
+        <attr name="CustomReachPaintStroken" format="dimension"></attr>
+        <attr name="CustomUnReachPaintStroken" format="dimension"></attr>
+        <attr name="CustomUnReachEnd" format="integer"></attr>
+        <attr name="CustomUnReachStart" format="integer"></attr>
+        <attr name="CustomHasProgressNum" format="boolean"></attr>
+
+    </declare-styleable>
+
+    <!--RoundProgressBar-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="circleColor" format="color" />
+        <attr name="progressCircleColor" format="color" />
+        <attr name="circleThickness" format="dimension" />
+        <attr name="topTextColor" format="color" />
+        <attr name="secondTextColor" format="color" />
+        <attr name="thirdTextColor" format="color" />
+        <attr name="maxprogress" format="integer" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="topText" format="string" />
+        <attr name="thirdText" format="string" />
+        <attr name="topTextSize" format="dimension" />
+        <attr name="secondTextSize" format="dimension" />
+        <attr name="thirdTextSize" format="dimension" />
+        <attr name="progressStartColor" format="color" />
+        <attr name="progressEndColor" format="color" />
+        <attr name="progressArgbColor" format="boolean" />
+        <attr name="smallCircleColor" format="color" />
+        <attr name="smallCircleEnable" format="boolean" />
+    </declare-styleable>
+</resources>

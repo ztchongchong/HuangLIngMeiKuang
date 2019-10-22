@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">煤矿卫士</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agency_keyword">关键词</string>
+    <string name="agency_tag">标签</string>
+    <string name="agency_category">类型</string>
+    <string name="agency_time_region">时间范围</string>
+</resources>
